@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-size: 62.5%;
+    --fc-heading: hsla(0, 0%, 100%, 1);
+    --fc-title: hsla(0, 0%, 20%, 1);
+    --fc-title-span: hsla(210, 96%, 46%, 1);
+    --bg-primary: hsla(0, 0%, 100%, 1);
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .page {
+    width: 39.3rem;
+    height: 85.2rem;
+    background: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mobile-bg {
+    position: relative;
+  }
+  
+  header h1,
+  header h2,
+  main {
+    position: absolute;
+  }
+  
+  header h1 {
+    color: var(--fc-heading);
+    font-size: 24px;
+  
+    min-width: 13.2rem;
+    min-height: 3.6rem;
+  
+    left: 2.7rem;
+    top: 5.1rem;
+  }
+  
+  header h2 {
+    color: var(--fc-heading);
+    font-size: 1.2rem;
+  
+    min-width: 32.6rem;
+    min-height: 1.8rem;
+  
+    top: 8.7rem;
+    left: 2.9rem;
+  }
+  
+  .header-bt, 
+  .ellipse1, 
+  .ellipse2 {
+      display: none;
+  }
+  
+  
+  
+  main {
+    background: var(--bg-primary);
+  
+    top: 25.9rem;
+    left: 5.1rem;
+    min-width: 30.7rem;
+    min-height: 46.9rem;
+  }
+  
+  .inside-main {
+    min-width: 30.7rem;
+    min-height: 46.9rem;
+  }
+  
+  .inside-main h1 {
+    color: var(--fc-title);
+    font-size: 2.6rem;
+    font-weight: 700;
+  
+    min-width: 12.6rem;
+    min-height: 3.9rem;
+  }
+  
+  .inside-main h2 {
+    display: flex;
+    min-width: 7.4rem;
+    min-height: 2.7rem;
+    margin-top: 3px;
+    color: var(--fc-title);
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+
+  .input-name {
+    position: absolute;
+    top: 10.9rem;
+  
+    min-width: 30.7rem;
+    min-height: 6rem;
+    padding: 1.8rem 2.6rem;
+    border-radius: 3rem;
+    border: 1px solid #eee;
+  }
+  
+  .input-email {
+    position: absolute;
+    top: 18.5rem;
+    min-width: 30.7rem;
+    min-height: 6rem;
+    padding: 1.8rem 2.6rem;
+    border-radius: 3rem;
+    border: 1px solid #eee;
+    
+  }
+  
+  .input-password {
+    position: absolute;
+    top: 26.1rem;
+  
+    min-width: 30.7rem;
+    min-height: 6rem;
+    padding: 1.8rem 2.6rem;
+    border-radius: 3rem;
+    border: 1px solid #eee;
+  }
+  
+  input {
+    display: flex;
+    position: absolute;
+    left: 5.8rem;
+    top: 2rem;
+    border: none;
+    font-size: 14px;
+    color: var(--fc-title);
+    opacity: 0.3;
+    font-family: "Poppins", sans-serif;
+    
+  }
+  
+  .register-bt {
+    position: absolute;
+    top: 33.7rem;
+  }
+  
+  .register-bt button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .register-bt img:hover {
+    transform: scale(1.1);
+    transition-delay: 30ms;
+    transition-property: transform;
+    transition-duration: 400ms;
+  }
+  
+  .inside-main p {
+    position: absolute;
+    top: 42rem;
+    left: 12.7rem;
+    opacity: 0.7;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--fc-title-span);
+  }
+  
+  .inside-main p:hover {
+      cursor: pointer;
+      text-decoration: underline;
+  }
+  
+  @media (min-width:1024px) {
+  
+  .page {
+      display: grid;
+      grid-template-columns: 86rem 1fr;
+      max-width: clamp(102.4rem, 144rem, 98vw);
+       max-height: calc(100vh - 90rem);
+       
+      
+  }
+  
+  .mobile-bg {
+      display: none;
+  }
+  
+  header {
+      position: relative;
+      background-image: url('./assets-register/Bg-desktop.svg');
+      width: 86rem;
+  min-height: 90rem;
+  overflow: hidden;
+  
+  }
+  
+  
+  .header-group {
+      position: relative;
+      display: grid;
+      grid-template-rows: auto auto auto;
+      
+      
+      align-items: flex-start;
+      width: 48.9rem;
+      height: 18.7rem;
+      left: 15.7rem;
+      top: 37.1rem;
+    }
+    
+  
+  header h1 {
+      
+      width: 22rem;
+      height: 6rem;
+      font-size: 4rem;
+      font-weight: 700;
+      left: 0;
+      top: 0;
+      
+      
+  }
+  
+  header h2 {
+      
+      width: 48.9rem;
+      height: 2.7rem;
+      font-size: 1.8rem;
+      font-weight: 500;
+      left: 0;
+      
+      
+      
+       
+  } 
+  
+  
+  
+  .header-bt {
+      
+      display: block;
+      position: absolute;
+      padding: 8px 30px;
+      
+      border-radius: 30px;
+      background: var(--fc-title-span);
+      border: none;
+  
+  color: var(--bg-primary);
+  font-family: Poppins;
+  font-size: 14px;
+  bottom: 0;
+  cursor: pointer;
+  
+  }
+  
+  .header-bt:hover {
+      transform: scale(1.1);
+    transition-delay: 30ms;
+    transition-property: transform;
+    transition-duration: 400ms;
+  }
+  
+  
+  main {
+      
+      position: relative;
+      width: 31.2rem;
+      height: 35.6rem;
+      
+      left: 10.8rem;
+      top: 1.3rem;    
+  
+  }
+  
+  .ellipse1,.ellipse2 {
+      position: absolute;
+      display: flex;
+      width: 55.7rem;
+  height: 55.7rem;
+  
+  
+  border-radius: 557px;
+  border: 1px solid #0575E6;
+  
+  
+  color: var(--fc-title-span);
+  }
+  
+  .ellipse1 {
+      top: 62rem;
+  right: 51rem;
+  }
+  
+  .ellipse2 {
+      top: 64.6rem;
+      right:42.9rem;
+  }
+  
+  
+  }

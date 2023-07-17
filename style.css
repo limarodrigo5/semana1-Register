@@ -59,9 +59,9 @@ header h2 {
   left: 2.9rem;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 414px) {
   header h2 {
-    width: clamp(20rem, 100vw, 32.6rem);
+    width: clamp(20rem, 50vw, 32.6rem);
   }
 }
 

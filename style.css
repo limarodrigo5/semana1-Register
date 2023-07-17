@@ -59,6 +59,8 @@ header h2 {
   left: 2.9rem;
 }
 
+/* media query para evitar quebra do subtítulo no mobile */
+
 @media (max-width: 414px) {
   header h2 {
     width: clamp(20rem, 50vw, 32.6rem);

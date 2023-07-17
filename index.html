@@ -1,101 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Go Finance</title>
-    <link rel="stylesheet" href="style.css">
-   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
+    <div class="page">
+      <header>
+        <figure>
+          <img
+            src="./assets-register/Bg-mobile.svg"
+            alt="background do mobile"
+            class="mobile-bg"
+          />
+        </figure>
 
-<div class="page">
+        <div class="header-group">
+          <h1>GoFinance</h1>
+          <h2>O empréstimo ponto a ponto mais popular do mundo</h2>
 
-<header>
-    <figure>
-        <img src="./assets-register/Bg-mobile.svg" alt="background do mobile" class="mobile-bg">
-        
-    </figure>
+          <button class="header-bt">Read More</button>
+        </div>
 
+        <div class="ellipse1"></div>
+        <div class="ellipse2"></div>
+      </header>
 
-    <div class="header-group">
-    
-<h1>GoFinance</h1>
-<h2>O empréstimo ponto a ponto mais popular do mundo</h2>
+      <main>
+        <div class="inside-main">
+          <h1>Cadastro</h1>
+          <h2>para iniciar</h2>
 
-<button class="header-bt">Read More</button>
+          <div class="input-name">
+            <input
+              type="name"
+              name="name"
+              id="name"
+              placeholder="Nome e Sobrenome"
+            />
+            <label for="name" class="name-label">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <g opacity="0.3">
+                  <path
+                    d="M7.5 6.5C7.5 8.981 9.519 11 12 11C14.481 11 16.5 8.981 16.5 6.5C16.5 4.019 14.481 2 12 2C9.519 2 7.5 4.019 7.5 6.5ZM20 21H21V20C21 16.141 17.859 13 14 13H10C6.14 13 3 16.141 3 20V21H20Z"
+                    fill="#333333"
+                  />
+                </g>
+              </svg>
+            </label>
+          </div>
 
+          <div class="input-email">
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <label for="email" class="email-label">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <g opacity="0.3">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.5 5.25L2.25 4.5H21.75L22.5 5.25V18.75L21.75 19.5H2.25L1.5 18.75V5.25ZM3 6.8025V18H21V6.804L12.465 13.35H11.55L3 6.8025ZM19.545 6H4.455L12 11.8035L19.545 6Z"
+                    fill="#333333"
+                  />
+                </g>
+              </svg>
+            </label>
+          </div>
 
-</div>
+          <div class="input-password">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Senha"
+            />
+            <label for="password" class="password-label">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <g opacity="0.3">
+                  <path
+                    d="M20 12C20 10.897 19.103 10 18 10H17V7C17 4.243 14.757 2 12 2C9.243 2 7 4.243 7 7V10H6C4.897 10 4 10.897 4 12V20C4 21.103 4.897 22 6 22H18C19.103 22 20 21.103 20 20V12ZM9 7C9 5.346 10.346 4 12 4C13.654 4 15 5.346 15 7V10H9V7Z"
+                    fill="#333333"
+                  />
+                </g>
+              </svg>
+            </label>
+          </div>
 
-<div class="ellipse1"></div>
-<div class="ellipse2"></div>
+          <div class="register-bt">
+            <button onclick="location.reload()">
+              <img
+                src="./assets-register/Button-cadastrar.svg"
+                alt="Botão de cadastrar"
+              />
+            </button>
+          </div>
 
-</header>
-
-<main>
-<div class="inside-main">
-<h1>Cadastro</h1>
-<h2>para iniciar</h2>
-
-
-
-
-<div class="input-name">
-    <input type="name" name="name" id="name" placeholder="Nome e Sobrenome">
-    <label for="name" class="name-label">
-    
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <g opacity="0.3">
-              <path d="M7.5 6.5C7.5 8.981 9.519 11 12 11C14.481 11 16.5 8.981 16.5 6.5C16.5 4.019 14.481 2 12 2C9.519 2 7.5 4.019 7.5 6.5ZM20 21H21V20C21 16.141 17.859 13 14 13H10C6.14 13 3 16.141 3 20V21H20Z" fill="#333333"/>
-            </g>
-          </svg>
-    
-    </label>
+          <p>Voltar</p>
+        </div>
+      </main>
     </div>
-
-
-<div class="input-email">
-<input type="email" name="email" id="email" placeholder="Email">
-<label for="email" class="email-label">
-
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <g opacity="0.3">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 5.25L2.25 4.5H21.75L22.5 5.25V18.75L21.75 19.5H2.25L1.5 18.75V5.25ZM3 6.8025V18H21V6.804L12.465 13.35H11.55L3 6.8025ZM19.545 6H4.455L12 11.8035L19.545 6Z" fill="#333333"/>
-        </g>
-      </svg>
-
-</label>
-</div>
-
-<div class="input-password">
-<input type="password" name="password" id="password" placeholder="Senha">
-<label for="password" class="password-label">
-
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <g opacity="0.3">
-          <path d="M20 12C20 10.897 19.103 10 18 10H17V7C17 4.243 14.757 2 12 2C9.243 2 7 4.243 7 7V10H6C4.897 10 4 10.897 4 12V20C4 21.103 4.897 22 6 22H18C19.103 22 20 21.103 20 20V12ZM9 7C9 5.346 10.346 4 12 4C13.654 4 15 5.346 15 7V10H9V7Z" fill="#333333"/>
-        </g>
-      </svg>
-
-</label>
-</div>
-
-<div class="register-bt">
-   <button onclick="location.reload()"> 
-<img src="./assets-register/Button-cadastrar.svg" alt="Botão de cadastrar"> 
-</button>
-</div>
-
-<p>Voltar</p>
-</div>
-</main>
-
-</body>
-</div>
-
-
+  </body>
 </html>
